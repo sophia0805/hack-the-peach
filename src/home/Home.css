@@ -1,0 +1,41 @@
+body {
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.navbar {
+    padding: 0.5rem 2rem;
+    background: #EBBAB9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.peach {
+    width: 8vh;
+    height: 8vh;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 3vh;
+}
