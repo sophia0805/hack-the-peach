@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../logo.png';
 
-const About = () => {
+const Sponsors = () => {
   const navLinks = {
     home: '/home',
     about: '/about',
@@ -32,4 +32,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Sponsors
