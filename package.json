@@ -1,6 +1,6 @@
 {
   "name": "hack-the-peach",
-  "homepage": "https://sophia0805.github.io/htp",
+  "homepage": ".",
   "version": "1.0.0",
   "description": "clone the repo and run npm start. current version also requires running a live server of src/mars/ at port 5500\r ### about\r built at ascend in la with sophia wang. we ballllled",
   "main": "index.js",
