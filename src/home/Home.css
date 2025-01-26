@@ -1,17 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+
 body {
     flex-wrap: wrap;
     justify-content: right;
-}
-
-.navbar {
-    padding: 0.5rem 2rem;
     background: #EBBAB9;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    z-index: 10;
-    backdrop-filter: blur(10px);
+    position: absolute;
+    font-family: "Baloo 2", serif;
+    overflow: hidden;
 }
 
 .logo-container {
@@ -20,22 +15,84 @@ body {
     gap: 0.5rem;
     text-decoration: none;
 }
-
 .peach {
     width: 8vh;
     height: 8vh;
     object-fit: contain;
 }
 
+.navbar {
+    padding: 0.5rem 2rem;
+    background: #EBBAB9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95vw;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+}
 .nav-links {
     display: flex;
     gap: 2rem;
 }
-
 .nav-links a {
     color: #ffffff;
     text-decoration: none;
     font-weight: 500;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 3vh;
+}
+
+.peach-model {
+    left: 4vw;
+    top: 3vh;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+}
+
+h1 {
+    color: white;
+    font-size: 8vw;
+    transform: translate(13vw, 5vh);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.sign-up {
+    background-color: #C1E0F7;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 40px;
+    padding: 3vh 3vw;
+    font-size: 5vh;
+    text-align: center;
+    transition: all 0.3s ease; 
+    font-family: "Baloo 2", serif;
+    transform: translate(0, 8vh);
+}
+  
+.sign-up:hover {
+    background-color: #A9D2F2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+  
+.sign-up:active {
+    background-color: #8BBBE5;
+    transform: scale(0.98);
+}
+
+.info {
+    font-size: 1.5vw;
+    transform: translate(13vw, -6vh);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.highlight {
+    background-color: #C1E0F7;
 }
