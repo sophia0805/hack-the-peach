@@ -189,7 +189,7 @@ const Home = () => {
           <div className="peach-model" ref={mountRef} />
           <h1>Hack The Peach</h1>
           <div className="info">a 48-hour hackathon in downtown atlanta</div>
-          <button type="button" className="sign-up" onClick={() => openInNewTab('https://docs.google.com/forms/u/1/d/e/1FAIpQLSdH2Qfrtv-0PZjamfnjMmEd8HYT-pBSeUSy-2oCLWQF0T6JDA/viewform')}>Sign Up!</button>
+          <button type="button" className="sign-up" onClick={() => openInNewTab('https://register.hackthepeach.com')}>Sign Up!</button>
         </header>
       </div>
     </>
