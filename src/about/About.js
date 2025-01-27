@@ -28,6 +28,8 @@ const About = () => {
         <a className={`text`} onClick={() => goToPage('faq')}>FAQ</a>
       </div>
     </nav>
+      <section id="about">
+      </section>
     </>
   )
 }

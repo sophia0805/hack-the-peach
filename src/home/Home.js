@@ -29,8 +29,6 @@ const Home = () => {
   useEffect(() => {
     if (!mountRef.current) return;
 
-    document.title = "Hack the Peach - Atlanta's 48 hour high school hackathon";
-
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
     camera.aspect = 1;
@@ -192,13 +190,16 @@ const Home = () => {
 
       <div className="App">
         <header className="app-header">
-          <div className="peach-model" ref={mountRef} />
+          <div className="peach-model" ref={mountRef}/>
           {!hasInteracted && (
-            <div className="move">move me!</div>
+              <div className="move">move me!</div>
           )}
           <h1>Hack The Peach</h1>
-          <div className="info">a 48-hour hackathon in downtown atlanta</div>
-          <button type="button" className="sign-up" onClick={() => openInNewTab('https://register.hackthepeach.com')}>Sign Up!</button>
+          <div className="info">a 48-hour hackathon in atlanta</div>
+          <div className="info">get in touch at <a href="mailto:team@hackthepeach.com">team@hackthepeach.com</a></div>
+          <button type="button" className="sign-up"
+                  onClick={() => openInNewTab('https://register.hackthepeach.com')}>Sign Up!
+          </button>
         </header>
       </div>
     </>
