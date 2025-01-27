@@ -96,3 +96,10 @@ h1 {
 .highlight {
     background-color: #C1E0F7;
 }
+
+.move {
+    position: absolute;
+    left: 19vw;
+    top: 56vh;
+    
+}

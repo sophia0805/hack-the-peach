@@ -11,7 +11,7 @@ import './Home.css';
 const Home = () => {
   const navigate = useNavigate();
   const mountRef = useRef(null);
-
+  let hasInteracted = false;
   const navLinks = {
     home: '/home',
     about: '/about',
@@ -42,6 +42,10 @@ const Home = () => {
     controls.enableZoom = false;
     
     controls.update();
+
+    controls.addEventListener('start', () => {
+      hasInteracted = true;
+    });
 
     const ambientLight = new THREE.AmbientLight(0xffffff, 2);
     scene.add(ambientLight);
@@ -187,6 +191,9 @@ const Home = () => {
       <div className="App">
         <header className="app-header">
           <div className="peach-model" ref={mountRef} />
+          {!hasInteracted && (
+            <div className="move">move me!</div>
+          )}
           <h1>Hack The Peach</h1>
           <div className="info">a 48-hour hackathon in downtown atlanta</div>
           <button type="button" className="sign-up" onClick={() => openInNewTab('https://register.hackthepeach.com')}>Sign Up!</button>
