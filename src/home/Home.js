@@ -29,6 +29,8 @@ const Home = () => {
   useEffect(() => {
     if (!mountRef.current) return;
 
+    document.title = "Hack the Peach - Atlanta's 48 hour high school hackathon";
+
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
     camera.aspect = 1;
