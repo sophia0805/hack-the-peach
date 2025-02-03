@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Home from './home/Home';
 import About from './about/About';
 import Faq from './faq/FAQ';
@@ -16,7 +17,6 @@ function App() {
       <Route path="/faq" element={<Faq />} />
       <Route path="/schedule" element={<Schedule />} />
       <Route path="/sponsors" element={<Sponsors />} />
-
     </Routes>
     </Router>
   );
