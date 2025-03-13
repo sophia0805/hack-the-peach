@@ -195,7 +195,7 @@ const Home = () => {
               <div className="move">move me!</div>
           )}
           <h1>Hack The Peach</h1>
-          <div className="info">a 48-hour hackathon in atlanta</div>
+          <div className="info">a Spring high school hackathon in atlanta</div>
           <div className="info">get in touch at <a href="mailto:team@hackthepeach.com">team@hackthepeach.com</a></div>
           <button type="button" className="sign-up"
                   onClick={() => openInNewTab('https://register.hackthepeach.com')}>Sign Up!
